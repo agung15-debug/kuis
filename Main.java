@@ -62,9 +62,9 @@ public class Main {
             b = myObj.nextInt();
             System.out.print("Input Nilai Wawancara: ");
             c = myObj.nextInt();
-            WebDevelopment andro = new WebDevelopment(NIK, nama, a, b, c);
-            andro.setNilai(a, b, c);
-            andro.perhitunganNilai();
+            WebDevelopment web = new WebDevelopment(NIK, nama, a, b, c);
+            web.setNilai(a, b, c);
+            web.perhitunganNilai();
             user = subMenu();
             while (user != 3) {
                 switch (user) {
@@ -76,11 +76,11 @@ public class Main {
                         b = myBidang.nextInt();
                         System.out.print("Input Nilai Wawancara: ");
                         c = myBidang.nextInt();
-                        andro.setNilai(a, b, c);
-                        andro.perhitunganNilai();
+                        web.setNilai(a, b, c);
+                        web.perhitunganNilai();
                         break;
                     case 2:
-                        andro.status();
+                        web.status();
                         break;
                     default:
                         System.out.println("Not Valid");
