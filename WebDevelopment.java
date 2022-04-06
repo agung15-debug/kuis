@@ -38,7 +38,7 @@ public class WebDevelopment extends Penilaian {
 
     @Override
     public void perhitunganNilai() {
-        total = 0.2 * tulis + 0.5 * coding + 0.3 * wawancara;
+        total = 0.4 * tulis + 0.35 * coding + 0.25 * wawancara;
     }
 
     @Override
