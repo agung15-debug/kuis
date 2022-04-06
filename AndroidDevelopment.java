@@ -50,8 +50,10 @@ public class AndroidDevelopment extends Penilaian {
         }
         System.out.println("Nilai Akhir : " + total);
         if (status) {
+            System.out.println("Keterangan : LOLOS");
             System.out.println("Selamat Kepada " + nama + " telah diterima sebagai Android");
         } else {
+            System.out.println("Keterangan : GAGAL");
             System.out.println("Maaf Kepada " + nama + " telah ditolak sebagai Android");
         }
     }
