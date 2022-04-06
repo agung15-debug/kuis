@@ -45,6 +45,8 @@ public class WebDevelopment extends Penilaian {
     public void status() {
         if (total >= 85) {
             status = true;
+        } else {
+            status = false;
         }
         System.out.println("Nilai Akhir : " + total);
         if (status) {

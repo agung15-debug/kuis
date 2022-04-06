@@ -11,16 +11,17 @@ public class Main {
         System.out.print("Pilih Jenis Form : ");
         input = myBidang.nextInt();
         if (input == 1) {
+            Scanner myObj = new Scanner(System.in);
             System.out.print("Input NIK: ");
-            NIK = myBidang.nextLine();
+            NIK = myObj.nextLine();
             System.out.print("Input Nama: ");
-            nama = myBidang.nextLine();
+            nama = myObj.nextLine();
             System.out.print("Input Nilai tes Tulis: ");
-            a = myBidang.nextInt();
+            a = myObj.nextInt();
             System.out.print("Input Nilai Tes Coding: ");
-            b = myBidang.nextInt();
+            b = myObj.nextInt();
             System.out.print("Input Nilai Wawancara: ");
-            c = myBidang.nextInt();
+            c = myObj.nextInt();
             AndroidDevelopment andro = new AndroidDevelopment(NIK, nama, a, b, c);
             andro.setNilai(a, b, c);
             andro.perhitunganNilai();
@@ -50,16 +51,17 @@ public class Main {
                 }
             }
         } else {
+            Scanner myObj = new Scanner(System.in);
             System.out.print("Input NIK: ");
-            NIK = myBidang.nextLine();
+            NIK = myObj.nextLine();
             System.out.print("Input Nama: ");
-            nama = myBidang.nextLine();
+            nama = myObj.nextLine();
             System.out.print("Input Nilai tes Tulis: ");
-            a = myBidang.nextInt();
+            a = myObj.nextInt();
             System.out.print("Input Nilai Tes Coding: ");
-            b = myBidang.nextInt();
+            b = myObj.nextInt();
             System.out.print("Input Nilai Wawancara: ");
-            c = myBidang.nextInt();
+            c = myObj.nextInt();
             WebDevelopment andro = new WebDevelopment(NIK, nama, a, b, c);
             andro.setNilai(a, b, c);
             andro.perhitunganNilai();
